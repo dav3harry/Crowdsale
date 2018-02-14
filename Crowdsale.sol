@@ -75,6 +75,7 @@ contract Crowdsale {
      * sends the entire amount to the beneficiary. If goal was not reached, each contributor can withdraw
      * the amount they contributed.
      */
+     /**
     function safeWithdrawal() afterDeadline public{
         if (!fundingGoalReached) {
             uint amount = balanceOf[msg.sender];
@@ -97,4 +98,5 @@ contract Crowdsale {
             }
         }
     }
+    **/
 }
